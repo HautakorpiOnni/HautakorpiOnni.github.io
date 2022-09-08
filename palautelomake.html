@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles_restaurant.css">
+    <p><a href="harj3.1_onnihautakorpi.html">Pääsivu</a></p>
+    <title>Lomake</title>
+    <meta charset="UTF-8">
+</head>
+<body class="grid-container">
+    <header class="header">
+        <h1>Palautelomake</h1>
+    </header>
+    <form action="harj3.1_onnihautakorpi.html" method="post">
+        Päivämäärä: <input type="date" name="date">
+        <br>
+        <h5>Kauanko jouduit odottamaan ruokaa</h5>
+        <select name="waiting">
+            <option value="10">10 min</option>
+            <option value="15">15 min</option>
+            <option value="20">20 min</option>
+            <option value="30">30 min</option>
+            <option value="45">45 min</option>
+            <option value="1h">1 tunti</option>
+            <option value="more">enemmän</option>
+        </select>
+        <br>
+        <h5>Palaute ruoan mausta</h5>
+        <input type="checkbox" name="taste1" value="maku1"> Erinomaista<br>
+        <input type="checkbox" name="taste2" value="maku2"> Oikein hyvää<br>
+        <input type="checkbox" name="taste3" value="maku3"> Ihan ok<br>
+        <input type="checkbox" name="taste4" value="maku4"> Ei ollut hyvää<br>
+<br>
+        <h5>Ruoan lämpötila</h5>
+        <input type="checkbox" name="temp1" value="temperature1"> Juuri sopivan lämpöinen<br>
+        <input type="checkbox" name="temp2" value="temperature2"> Kuumaa<br>
+        <input type="checkbox" name="temp3" value="temperature3"> Vähän viileä<br>
+        <input type="checkbox" name="temp4" value="temperature4"> Kylmää<br>
+<br>
+        <h5>Ruoan hinta</h5>
+        Ruoan hintasuhde (kerro vapaasti): <input type="text" name="price">
+<br>
+        <h5>Palaute palvelusta</h5>
+        <input type="checkbox" name="service1" value="service1"> Paras mahdollinen<br>
+        <input type="checkbox" name="service2" value="service2"> Asiakas otettiin hyvin huomioon<br>
+        <input type="checkbox" name="service3" value="service3"> Epäasiallista käytöstä henkilökunnalta<br>
+        <input type="checkbox" name="service4" value="service4"> En tulisi toisten<br>
+<br>
+        <h5>Vapaa palaute</h5>
+        <textarea name="message" rows="5" cols="30">
+            Palaute tähän...
+            </textarea>
+<br>
+        Yhteystiedot(jos haluat että sinuun otetaan yhteyttä): <input type="text" name="phone">
+
+    <br>
+
+        <input type="submit" value="Lähetä palaute">
+    </form> 
